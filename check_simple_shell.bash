@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Performing checks on the Holberton School "simple shell" project
-
+#
 #######################################
 # Print KO, in red, followed by a new line
 # Globals:
@@ -72,5 +72,6 @@ done
 rm -f $OUTPUTFILE $LTRACEOUTPUTFILE $ERROROUTPUTFILE
 rm -f checker_output_*
 rm -f checker_tmp_file_*
+rm -rf checker_tmp_dir_*
 rm -f /tmp/.checker_tmp_file_*
 echo -ne "\033[37m"
