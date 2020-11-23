@@ -21,6 +21,7 @@ $SLEEP $SLEEPSECONDS
 linemax=$(cat -n $LTRACEOUTPUTFILE | grep "total" | cut -f 1 | tr -d ' ')
 f1=(access chdir close closedir execve exit _exit fflush fork free getcwd getline isatty kill malloc open opendir perror read readdir signal stat lstat fstat strtok wait waitpid wait3 wait4 write __xstat __lxstat __xstat)
 i=3
+b=0
 linemax=$(($linemax - 2))
 while [ $i -le $linemax ]
 do
