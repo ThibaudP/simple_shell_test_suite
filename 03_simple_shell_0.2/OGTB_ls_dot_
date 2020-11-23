@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# run a mix of ls and /bin/ls many times
+# run ls with a dot
 
 command="ls ."
 tmp_file="checker_tmp_file_$RANDOM"
