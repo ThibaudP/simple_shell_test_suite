@@ -9,6 +9,10 @@ Fork this repo and add more checks to help you and the rest of the class build t
 
 Open the file `config` and update the variable `SHELL` with your shell.
 
+## Note for check allowed function
+check_allowed_function : Check if there is not allowed function used with the command : /bin/ls
+check_allowed_function_advanced : Check if there is not allowed function used with the command : env, ls -la, setenv, unset.
+
 ## Run
 
 Usage `./check_simple_shell.bash`
