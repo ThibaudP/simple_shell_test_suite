@@ -1,7 +1,7 @@
 #!/bin/bash
 # logical operator
 
-command="ls /var && ls /var"
+command="ls && ls"
 tmp_file="checker_tmp_file_$RANDOM"
 
 # clean up
@@ -17,9 +17,8 @@ echo "$command" | $SHELL > $OUTPUTFILE 2> /dev/null &
 $SLEEP $SLEEPSECONDS
 
 # check the result
-nmatch=`cat $OUTPUTFILE | grep -c "backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
-backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp"`
-if [ $nmatch -eq 1 ]; then
+nmatch=`cat $OUTPUTFILE | grep -c $tmp_file`
+if [ $nmatch -eq 2 ]; then
            print_ok
 else
            print_ko
