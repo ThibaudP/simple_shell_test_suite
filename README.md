@@ -2,7 +2,7 @@
 
 This repo centralizes all checks made by VCFR-0920 for the simple_shell project.
 
-This repo currently contains 60 checks, including **47** *original* scripts from **10** authors from VCFR-0920.
+Currently, 60 checks are available, including **47** *original* scripts from **10** authors from VCFR-0920.
 
 
 ## Installation & configuration
