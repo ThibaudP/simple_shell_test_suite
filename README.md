@@ -5,13 +5,19 @@ This repo centralizes all checks made by VCFR-0920 for the simple_shell project.
 This repo currently contains 60 checks, including **47** *original* scripts from **10** authors from VCFR-0920.
 
 
-## Configuration
+## Installation & configuration
 
-Open the file `config` and update the variable `SHELL` with your shell.
+Clone this repo on the same machine that runs your shell.
+Open the `config` file and update the `SHELL` variable with the path to your shell (both absolute & relative paths work).
 
-## Run
 
-Usage `./check_simple_shell.bash`
+## Usage
+
+* Step 1: Run `$ ./check_simple_shell.bash`
+* Step 2: Cry
+* Step 3: Fix bugs
+* Step 4: Repeat
+
 
 ## Misc
 
