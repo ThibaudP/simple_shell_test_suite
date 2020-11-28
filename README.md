@@ -1,19 +1,23 @@
 # Simple Shell, Checks
 
-There will be no checks released before the deadline. We **strongly** encourage the whole class to work together and create a suite of checks covering both regular tests and edged cases for each task.
+This repo centralizes all checks made by VCFR-0920 for the simple_shell project.
 
-Here is an example on how to check your shell.
-Fork this repo and add more checks to help you and the rest of the class build the best simple shell possible.
+This repo currently contains 60 checks, including **47** *original* scripts from **10** authors from VCFR-0920.
+
 
 ## Configuration
 
 Open the file `config` and update the variable `SHELL` with your shell.
 
-## Note for check allowed function
+## Run
+
+Usage `./check_simple_shell.bash`
+
+## Misc
+
+### Note for check allowed function
+
 Check_allowed_function : check if there is not allowed function used with the command : /bin/ls
 Check_allowed_function_advanced : check if there is not allowed function used with the command : env, ls -la, setenv, unset.
 
 Be carefully, this test only work with gcc version 4.8.4, if you compiled with an other version, it's possible that ltrace do not work correctly.
-## Run
-
-Usage `./check_simple_shell.bash`
