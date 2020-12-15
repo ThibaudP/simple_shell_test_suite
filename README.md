@@ -23,7 +23,7 @@ Open the `config` file and update the `SHELL` variable with the path to your she
 
 ### check_allowed_function
 
-`check_allowed_function`: looks for forbidden functions while running the command : /bin/ls
-`check_allowed_function_advanced`: looks for forbidden functions while running the commands : env, ls -la, setenv, unsetenv.
+* `check_allowed_function`: looks for forbidden functions while running the command : /bin/ls
+* `check_allowed_function_advanced`: looks for forbidden functions while running the commands : env, ls -la, setenv, unsetenv.
 
-_Note_: this test only work if your shell was compiled with `gcc-4.8.4`. Other versions of gcc have been known to cause `ltrace` to behave unpredictably. Use at your own risk and don't take the results for granted!
+*Note:* this test only work if your shell was compiled with `gcc-4.8.4`. Other versions of gcc have been known to cause `ltrace` to behave unpredictably. Use at your own risk and don't take the results for granted!
